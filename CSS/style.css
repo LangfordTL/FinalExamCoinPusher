@@ -1,3 +1,40 @@
 .root{
-    background-image: url('../images/caisno.jpg');
+    --background-image: url('../img/Casino_background.jpg'); 
+    --color-font-body: rgb(208, 211, 0);
+    --pos-top: 400px;
+    --pos-left: 200px;
+}
+
+#CoinPusherGame{
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    top: var(--pos-top);
+    left: var(--pos-left);
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.rectangle{
+    width: 200px;
+    height: 100px;
+    top: var(--pos-top);
+    left: var(--pos-left);
+    background-color: blue;
+}
+
+/* HTML: <div class="rhombus"></div> */
+.rhombus {
+  height: 200px; /* adjust to control the size  */
+  aspect-ratio: 1;
+  clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+  background: #88A65E;
+}
+
+p{
+    color: var(--color-font-body);
 }
