@@ -8,12 +8,14 @@ const coinImages = [
     "img/pokerchips/Blue Chip.png",
     "img/pokerchips/Green Chip.png",
     "img/pokerchips/Red Chip.png",
+    "img/pokerchips/Casino coin.jpg"
 ];
 const coinValues = {
     "img/pokerchips/Black Chip.png": 1,
     "img/pokerchips/Blue Chip.png": 5,
     "img/pokerchips/Green Chip.png": 10,
     "img/pokerchips/Red Chip.png": 25,
+    "img/pokerchips/Casino coin.jpg": 1000
 };
 
 let spawnCounter = 0;
@@ -104,7 +106,7 @@ function addCoin() {
     if (Math.floor(Math.random() * 1000) === 0){
         ci.src = coinImages[randomCoin];
     } else {
-        randomCoin = Math.floor(Math.random() * coinImage.length);
+        randomCoin = Math.floor(Math.random() * coinImages.length);
         ci.src = coinImages[randomCoin];
     }
 
